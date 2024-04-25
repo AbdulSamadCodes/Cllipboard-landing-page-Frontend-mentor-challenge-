@@ -1,0 +1,241 @@
+/*=========================Custom Properties========================*/
+
+:root {
+  /*==========Colors=======*/
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+
+  /*=======Typography=====*/
+
+  --fs-1: 24px;
+  --fs-2: 28px;
+
+  --font-family-Bai-jamurjee: "Bai Jamjuree", sans-serif;
+
+  /*==========Spacing=======*/
+
+  --section-spacing:100px;
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a,
+span,
+input {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  scrollbar-width: thin;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font-family-Bai-jamurjee);
+}
+
+/*=========================Reused styles===========================*/
+.section {
+  padding-block-start: var(--section-spacing);
+}
+
+.container {
+  padding-inline: 16px;
+  max-width:450px;
+  margin-inline: auto;
+}
+
+.text-align {
+  --position: center;
+  text-align: var(--position);
+}
+
+.logo {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: var(--fs-1);
+}
+
+.section-text {
+  color: var(--grayish-blue);
+  line-height: 1.6;
+  margin-block: 15px 25px;
+}
+
+.download-buttons {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 80px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  transition:opacity 200ms linear;
+}
+
+.btn:is(:hover , :focus) {
+  opacity: 0.8;
+}
+
+.ios-button {
+  background-color: var(--strong-cyan);
+  border-block-end: 2px solid hsl(171, 66%, 29%);
+}
+
+.mac-button {
+  background-color: var(--light-blue);
+  border-block-end: 2px solid hsl(233, 63%, 58%);
+}
+
+.banner {
+  max-width:330px;
+  margin-inline: auto;
+}
+
+.access-card-icon {
+  margin-inline:auto;
+  max-width: max-content;
+}
+
+/*=========================Main styles===========================*/
+
+.main-container {
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+}
+
+/*==========Hero section========*/
+
+.hero-title {
+  font-size: var(--fs-2);
+  margin-block-start: 40px;
+}
+
+/*==========Features  section========*/
+
+.features .grid {
+  margin-block-start:40px;
+}
+
+.feature-banner {
+  max-width:330px;
+  margin-inline: auto;
+}
+
+.feature-list {
+  padding-inline:16px;  
+  margin-block-start:40px;
+  max-width:400px;
+  margin-inline:auto;
+}
+
+.feature-card .card-text {
+  text-wrap:balance;
+}
+
+/*==========Access  section========*/
+
+.access-card .section-title {
+  margin-block-start:10px;
+}
+
+/*==========Brands section========*/
+
+.brand-list {
+  flex-direction: column;
+  gap:50px;
+}
+
+.brand-list img{
+  width:120px;
+}
+
+/*==========Clipboard  section========*/
+
+.clipboard{
+  padding-block:var(--section-spacing);
+}
+
+/*=============Footer===========*/
+
+.footer {
+  background-color: hsl(200, 29%, 94%);
+  padding-block:25px 40px;
+}
+
+.footer-list {
+  margin-block:30px;
+  gap:20px ;
+}
+
+
+
+.footer .social-list {
+  justify-content: center;
+  gap:30px;
+}
+
+
